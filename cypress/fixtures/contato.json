@@ -1,0 +1,12 @@
+{
+  "formulario": {
+    "nome": "Breno",
+    "sobrenome": "Martinez",
+    "email": "brehmartinez@gmail.com",
+    "telefone": "11999999999",
+    "produto": "YouTube",
+    "mensagem": "Gostaria de parabenizar a equipe pelo excelente atendimento e suporte oferecido. Estou muito satisfeito com os serviços prestados e continuarei recomendando para amigos e familiares. Obrigado por tudo!",
+    "assertSucesso": "Mensagem enviada com sucesso.",
+    "assertErroObrigatorios": "Valide os campos obrigatórios!"
+  }
+}
