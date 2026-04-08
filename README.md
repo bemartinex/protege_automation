@@ -1,5 +1,43 @@
 ## 🤖 Estrutura do Projeto - Protege Automation
 
+## 🛠️ Instalação de Dependências
+
+### **Pré-requisitos**
+- **Node.js** versão 14 ou superior
+- **npm** (gerenciador de pacotes do Node.js)
+
+### **Passo 1: Clonar ou acessar o repositório**
+```bash
+cd protege_automation
+```
+
+### **Passo 2: Instalar as dependências**
+```bash
+npm install
+```
+
+- **cypress** (^15.13.0): Framework principal de automação E2E
+- **cypress-file-upload** (^5.0.8): Plugin para fazer upload de arquivos nos testes
+- **cypress-xpath** (^2.0.1): Suporte a XPath nos testes Cypress
+
+---
+
+## ▶️ Executando os Testes
+
+### **Modo Interativo (Interface do Cypress)**
+Para executar os testes com a interface visual do Cypress:
+```bash
+npx cypress open
+```
+
+### **Modo Headless (CLI)**
+Para executar os testes em background (sem interface visual):
+```bash
+npx cypress run
+```
+
+---
+
 ### 📂 Descrição dos Diretórios
 
 | Diretório | Descrição |
@@ -11,10 +49,6 @@
 ---
 
 ## 🎯 Cenários de Testes (BDD)
-
-Os testes são estruturados seguindo Behavior Driven Development (BDD), descrevendo o comportamento esperado da aplicação em linguagem natural.
-
-### 📝 Suite: "Formulario de Contato"
 
 #### ✅ **Cenário 1: Enviar mensagem com sucesso sem anexo**
 ```gherkin
@@ -62,44 +96,6 @@ Dado que o usuário acessa o formulário de contato
 Quando preenche todos os campos obrigatórios EXCETO o telefone
 E clica no botão "Enviar"
 Então deve exibir a mensagem "Mensagem enviada com sucesso."
-```
-
----
-
-## 🛠️ Instalação de Dependências
-
-### **Pré-requisitos**
-- **Node.js** versão 14 ou superior
-- **npm** (gerenciador de pacotes do Node.js)
-
-### **Passo 1: Clonar ou acessar o repositório**
-```bash
-cd protege_automation
-```
-
-### **Passo 2: Instalar as dependências**
-```bash
-npm install
-```
-
-- **cypress** (^15.13.0): Framework principal de automação E2E
-- **cypress-file-upload** (^5.0.8): Plugin para fazer upload de arquivos nos testes
-- **cypress-xpath** (^2.0.1): Suporte a XPath nos testes Cypress
-
----
-
-## ▶️ Executando os Testes
-
-### **Modo Interativo (Interface do Cypress)**
-Para executar os testes com a interface visual do Cypress:
-```bash
-npx cypress open
-```
-
-### **Modo Headless (CLI)**
-Para executar os testes em background (sem interface visual):
-```bash
-npx cypress run
 ```
 
 ---
